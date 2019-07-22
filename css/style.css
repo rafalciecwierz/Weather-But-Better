@@ -1,0 +1,384 @@
+/* ### TABLE OF CONTENT - CSS BY R.C. ### feel free to c&p ;)  */
+/*  1. Imports 
+    2. Body & html style
+    3. Aside CSS style
+    4. Main CSS style
+    5. Hamburger style
+*/
+
+
+
+/* ### 1. Imports ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap');
+
+
+/* ### 2. Body & html style ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+body,
+html {
+    height: calc(100% - 2em);
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a83279+0,d38312+100 */
+    background: #a83279;
+    /* Old browsers */
+    background: -moz-linear-gradient(70deg, #a83279 0%, #d38312 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(70deg, #a83279 0%, #d38312 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(70deg, #a83279 0%, #d38312 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a83279', endColorstr='#d38312', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/*### 3. Aside CSS style ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+aside {
+    color: #fff;
+    display: grid;
+    grid-template-columns: auto 40px;
+    padding: 2em;
+}
+
+img {
+    width: 40px;
+    cursor: pointer;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+nav {
+    z-index: 1;
+    background: #F8D0D0;
+    font-weight: 600;
+    color: black;
+    position: absolute;
+    display: block;
+    background: #F8D0D0;
+    width: 70%;
+    left: -100%;
+    top: 0;
+    height: 100%;
+}
+
+.active {
+    left: 0;
+    transition: left 0.5s ease-out;
+}
+
+.contact {
+    margin: 2em 10px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto 100px;
+}
+
+.contact p {
+    margin: 0 20px;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a img {
+    float: left;
+    margin: 0 5px;
+    height: 1.2em;
+    width: 1.2em;
+}
+
+.description {
+    padding: 2em;
+    background: #FFF1F5;
+    font-size: 0.8em;
+    line-height: 1.4em;
+}
+
+
+/*### 4. Main CSS style ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+main{
+    background-color: #fff;
+    padding: 2em 1.5em 50% 1.5em;
+    color: #414141;
+    background: url('../images/bg-cloud.svg') no-repeat bottom right, url('../images/clouds.svg') no-repeat 80% 90%,  #fff;
+    background-size: 70%, 60%;
+    animation: 2s infinite alternate slide;
+}
+
+@keyframes slide {
+    from {
+        background-position-x: right, 80%;
+    }
+  
+    to {
+        background-position-x: right, 75%;
+    }
+  }
+
+main h1 {
+    font-size: 3em;
+    margin: 0;
+}
+.searchbox {
+    display: grid;
+    grid-template-columns: 210px 32px;
+
+}
+
+input {
+    border: none;
+    border-bottom: 6px solid #707070;
+    color: #707070;
+    font-size: 1.6em;
+    width: 200px;
+    font-style: italic;
+}
+
+
+.load {
+    display: none;
+}
+.searchbox label{
+    position: absolute;
+    z-index: 0;
+    transition: all 0.5s;
+    cursor: text;
+    font-size: 1em;
+    margin-top: 20px;
+    
+}
+
+input:focus + label {
+    margin-top: 0px;
+    font-size: .4em;
+}
+
+input:valid + label{
+    margin-top: 0px;
+    font-size: .4em;
+}
+
+.searchbox svg {
+    cursor: pointer;
+    fill: #707070;
+    background-size: 20px 20px;
+    border: 3px solid #707070;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+.searchbox svg:hover{
+    fill: #fff;
+    border: 3px solid #a83279;
+    background-color: #d38312;
+    transition: all 0.5s ease-in-out;
+}
+
+.weather h2 {
+    margin: 40px 0 0 0;
+}
+
+.weather h3 {
+    margin: 0px;
+    font-style: italic;
+}
+.weather p {
+    line-height: 1.5em;
+}
+
+
+/* ### 5. Hamburger CSS  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.hamburger {
+    padding: 0;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible;
+}
+
+.hamburger:hover {
+    opacity: 0.7;
+}
+
+.hamburger.is-active:hover {
+    opacity: 0.7;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+    background-color: #fff;
+}
+
+.hamburger-box {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+}
+
+.hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+    width: 40px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+}
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+    content: "";
+    display: block;
+}
+
+.hamburger-inner::before {
+    top: -10px;
+}
+
+.hamburger-inner::after {
+    bottom: -10px;
+}
+
+.hamburger--squeeze .hamburger-inner {
+    transition-duration: 0.075s;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--squeeze .hamburger-inner::before {
+    transition: top 0.075s 0.12s ease, opacity 0.075s ease;
+}
+
+.hamburger--squeeze .hamburger-inner::after {
+    transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--squeeze.is-active .hamburger-inner {
+    transform: rotate(45deg);
+    transition-delay: 0.12s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.hamburger--squeeze.is-active .hamburger-inner::before {
+    top: 0;
+    opacity: 0;
+    transition: top 0.075s ease, opacity 0.075s 0.12s ease;
+}
+
+.hamburger--squeeze.is-active .hamburger-inner::after {
+    bottom: 0;
+    transform: rotate(-90deg);
+    transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+
+/* ### 6. Media query ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@media screen and (orientation:landscape) {
+    nav{
+     
+    }
+}
+@media only screen and (min-width: 768px) {
+    body {
+        display: grid;
+        grid-template-columns: 20% auto;
+        padding: 2em;
+        background-color: #FFF1F5;
+    }
+
+
+    .hamburger{
+        display: none;
+    }
+
+    aside {
+        background-color: #F8D0D0;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        padding: 0;
+    }
+
+    main{
+        padding: 8em;
+    }
+
+    #avatar {
+        border-radius: 50%;
+        background: #fff;
+        width: 80px;
+        height: 80px;
+        margin: 2em auto 1em auto;
+    }
+
+    figcaption{
+        padding: 0px 15px;
+        text-align: center;
+        color: #707070;
+    }
+
+    nav{
+        position: relative;
+        width: 100%;
+        left: 0;
+        transition: none;
+    }
+    
+    .contact {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        margin: 0px;
+    }
+
+    .contact p {
+        margin: 0px;
+        text-align: center;
+    }
+    .contact ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+    .contact ul li {
+        margin: auto;
+    }
+    
+    .description{
+        margin: 0px;
+        padding: 1em;
+    }
+
+}

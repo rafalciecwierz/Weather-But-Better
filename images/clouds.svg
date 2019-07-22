@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="555.262" height="326.646" viewBox="0 0 555.262 326.646">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.694" y1="0.265" x2="0.076" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#dbdada"/>
+      <stop offset="1" stop-color="#d1d1d1"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.306" y1="0.265" x2="0.924" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="clouds" transform="translate(-1184.435 -439)">
+    <circle id="Ellipse_2" data-name="Ellipse 2" cx="69" cy="69" r="69" transform="translate(1267 439)" fill="#eba548"/>
+    <path id="Path_1" data-name="Path 1" d="M2193.663,467.683h412.11s108.12-45.654,56.41-139.672-166.1-34.473-166.1-34.473S2483.55,177.583,2377,201.087s-117.522,126.924-117.522,126.924-51.709-90.884-114.388,0S2193.663,467.683,2193.663,467.683Z" transform="translate(-939 274.615)" stroke="#fff" stroke-width="5" fill="url(#linear-gradient)"/>
+    <path id="Path_2" data-name="Path 2" d="M2360.4,329.012H2160.154s-52.536-22.184-27.41-67.868,80.708-16.751,80.708-16.751,6.091-56.344,57.866-44.923,57.1,61.673,57.1,61.673,25.126-44.161,55.582,0S2360.4,329.012,2360.4,329.012Z" transform="translate(-754.379 434.134)" stroke="#fff" stroke-width="5" fill="url(#linear-gradient-2)"/>
+  </g>
+</svg>
