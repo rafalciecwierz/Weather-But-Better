@@ -307,11 +307,6 @@ input:valid + label{
 
 
 /* ### 6. Media query ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-@media screen and (orientation:landscape) {
-    nav{
-     
-    }
-}
 @media only screen and (min-width: 768px) {
     body {
         display: grid;
