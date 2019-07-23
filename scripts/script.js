@@ -39,7 +39,7 @@ function searchWeather(){
 
 function updateWeather(weatherData){
     weatherCity.textContent = weatherData.cityName.charAt(0).toUpperCase() + weatherData.cityName.slice(1);
-    if(weatherData.country.length>0) weatherFlag.src = "http://openweathermap.org/images/flags/" + weatherData.country.toLowerCase() +".png"
+    if(weatherData.country.length>0) weatherFlag.src = "https://openweathermap.org/images/flags/" + weatherData.country.toLowerCase() +".png"
     weatherDescription.textContent = weatherData.description;
     weatherTemperature.textContent = 'Temperature: ' + weatherData.temperature;
     weatherWind.textContent = 'Wind: ' + weatherData.wind;
