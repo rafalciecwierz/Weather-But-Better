@@ -1,6 +1,17 @@
 "use strict";
 
 searchButton.addEventListener('click', searchWeather);
+document.addEventListener('keypress', logKey);
+
+function logKey(e) {
+    if(e.keyCode === 13){
+        searchWeather();
+    }
+    return false;
+   
+}
+
+
 
 
 // Search function
