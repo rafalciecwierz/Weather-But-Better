@@ -86,6 +86,7 @@ nav {
     grid-template-columns: auto 100px;
 }
 
+
 .contact p {
     margin: 0 20px;
     padding: 0;
@@ -97,11 +98,17 @@ ul {
     padding: 0;
 }
 
-ul li a img {
+.icons {
     float: left;
     margin: 0 5px;
     height: 1.2em;
     width: 1.2em;
+    transition: all 0.5s ease-in-out;
+}
+
+.icons:hover {
+    border-radius: 20px;
+    background-color: white;
 }
 
 .description {
@@ -111,9 +118,17 @@ ul li a img {
     line-height: 1.4em;
 }
 
+.links {
+    color: black;
+}
+.links:visited {
+    color: #d38312;
+}
+
 
 /*### 4. Main CSS style ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 main{
+    min-height: 50%;
     background-color: #fff;
     padding: 2em 1.5em 50% 1.5em;
     color: #414141;
@@ -190,6 +205,10 @@ input:valid + label{
     transition: all 0.5s ease-in-out;
 }
 
+.weather {
+    display: none;
+}
+
 .weather h2 {
     margin: 40px 0 0 0;
 }
@@ -199,6 +218,7 @@ input:valid + label{
     font-style: italic;
 }
 .weather p {
+    margin: 0px;
     line-height: 1.5em;
 }
 

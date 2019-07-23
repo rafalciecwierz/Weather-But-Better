@@ -24,9 +24,9 @@
             <div class="contact">
                 <p>FIND ME AT:</p>
                 <ul>
-                    <li><a href="#"><img src="images/github.svg" alt="github"></a></li>
-                    <li><a href="#"><img src="images/insta.svg" alt="instagram"></a></li>
-                    <li><a href="#"><img src="images/fb.svg" alt="facebook"></a></li>
+                    <li><a href="https://github.com/rafalciecwierz/" target="_blank" rel="noopener noreferrer"><img class="icons" src="images/github.svg" alt="github"></a></li>
+                    <li><a href="https://www.instagram.com/tigger.swift/" target="_blank" rel="noopener noreferrer"><img class="icons" src="images/insta.svg" alt="instagram"></a></li>
+                    <li><a href="https://www.facebook.com/SeventySwift" target="_blank" rel="noopener noreferrer"><img class="icons" src="images/fb.svg" alt="facebook"></a></li>
                 </ul>
             </div>
             <p class="description">Hello, <br>
@@ -36,11 +36,11 @@
                 <br>   
                 My inspirations for this project:<br>
                 _<br>
-                API:  OpenWeather<br>
+                <b>API: </b><a class="links"  href="https://openweathermap.org/api" target="_blank" rel="noopener noreferrer">OpenWeather</a><br>
                 _<br>
-                Design: DesignCourse<br>
+                <b>Design: </b><a class="links"  href="https://www.youtube.com/channel/UCVyRiMvfUNMA1UPlDPzG5Ow" target="_blank" rel="noopener noreferrer">DesignCourse</a><br>
                 _<br>
-                Back-end: Accelerated JavaScript Training<br>
+                <b>Back-end: </b><a class="links" href="https://www.udemy.com/javascript-bootcamp-2016/" target="_blank" rel="noopener noreferrer">Accelerated JavaScript Training</a><br>
                 <br>    
                 I hope it was usefull! :) <br>
                 Have a nice day!<br>
@@ -50,26 +50,25 @@
     <main>
         <h1>Weather but&nbspbetter</h1>
         <div class="searchbox">
-            <input type="search" name="searchBox" id="searchBox" required>
+            <input class="inputSearch" type="search" name="searchBox" id="searchBox" required>
             <label for="searchBox">City Name</label>
-            <svg viewBox="-5 -5 35 35" width="40px" height="40px" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M14.757 20.171c-.791.523-1.738.829-2.757.829-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5c0 1.019-.306 1.966-.829 2.757l2.829 2.829-1.414 1.414-2.829-2.829zm-9.082-1.171c-3.438 0-5.675-2.629-5.675-5.5 0-2.702 1.951-4.945 4.521-5.408.212-3.951 3.473-7.092 7.479-7.092s7.267 3.141 7.479 7.092c2.57.463 4.521 2.706 4.521 5.408 0 2.855-2.218 5.5-5.675 5.5.3-.63.508-1.31.608-2.026 1.726-.214 3.067-1.691 3.067-3.474 0-2.969-2.688-3.766-4.432-3.72.323-3.983-2.115-6.78-5.568-6.78-3.359 0-5.734 2.562-5.567 6.78-1.954-.113-4.433.923-4.433 3.72 0 1.783 1.341 3.26 3.068 3.474.099.716.307 1.396.607 2.026m6.325-6c1.655 0 3 1.345 3 3s-1.345 3-3 3c-1.656 0-3-1.345-3-3s1.344-3 3-3"/></svg>
+            <svg class="searchButton" viewBox="-5 -5 35 35" width="40px" height="40px" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M14.757 20.171c-.791.523-1.738.829-2.757.829-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5c0 1.019-.306 1.966-.829 2.757l2.829 2.829-1.414 1.414-2.829-2.829zm-9.082-1.171c-3.438 0-5.675-2.629-5.675-5.5 0-2.702 1.951-4.945 4.521-5.408.212-3.951 3.473-7.092 7.479-7.092s7.267 3.141 7.479 7.092c2.57.463 4.521 2.706 4.521 5.408 0 2.855-2.218 5.5-5.675 5.5.3-.63.508-1.31.608-2.026 1.726-.214 3.067-1.691 3.067-3.474 0-2.969-2.688-3.766-4.432-3.72.323-3.983-2.115-6.78-5.568-6.78-3.359 0-5.734 2.562-5.567 6.78-1.954-.113-4.433.923-4.433 3.72 0 1.783 1.341 3.26 3.068 3.474.099.716.307 1.396.607 2.026m6.325-6c1.655 0 3 1.345 3 3s-1.345 3-3 3c-1.656 0-3-1.345-3-3s1.344-3 3-3"/></svg>
         </div>
         <p class="load">Loading...</p>
         <div class="weather">
             <h2>Poznań</h2>
-            <h3>few clouds</h3>
-            <p>
-                Temperature: 22°C<br>
-                Wind: 2.6 m/s<br>
-                Clouds: 20%<br>
-                Air pressure: 1010 hpa<br>
-
-            </p>
+            <h3 class="weatherDescription">few clouds</h3>
+            <p class="weatherTemperature">Temperature: 22°C</p>
+            <p class="weatherWind">Wind: 2.6 m/s</p>
+            <p class="weatherClouds">Clouds: 20%</p>
+            <p class="weatherPressure">Air pressure: 1010 hpa</p>
         </div>
 
     </main>
 
     <script src="scripts/init.js"></script>
+    <script src="scripts/weather-data.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
