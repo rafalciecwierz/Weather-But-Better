@@ -2,6 +2,7 @@
 
 var menu = document.querySelector('nav'),
     btn = document.querySelector('button'),
+    linkButton = document.querySelector('.links'),
     searchButton = document.querySelector('.searchButton'),
     searchCity = document.querySelector('.inputSearch'),
     loadingText = document.querySelector('.load'),

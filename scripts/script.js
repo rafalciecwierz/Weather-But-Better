@@ -6,6 +6,7 @@ document.addEventListener('keypress', logKey);
 function logKey(e) {
     if(e.keyCode === 13){
         searchWeather();
+        linkButton.focus();
     }
     return false;
    
