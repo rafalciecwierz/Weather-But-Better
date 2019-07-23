@@ -206,11 +206,17 @@ input:valid + label{
 }
 
 .weather {
+    margin-top: 40px;
     display: none;
 }
 
 .weather h2 {
-    margin: 40px 0 0 0;
+    display: inline;
+}
+.flag {
+    cursor: default;  
+    height: 11px;
+    width: 16px;
 }
 
 .weather h3 {
