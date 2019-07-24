@@ -130,7 +130,7 @@ ul {
 main{
     min-height: 50%;
     background-color: #fff;
-    padding: 2em 1.5em 50% 1.5em;
+    padding: 2em 1.5em 40% 1.5em;
     color: #414141;
     background: url('../images/bg-cloud.svg') no-repeat bottom right, url('../images/clouds.svg') no-repeat 80% 90%,  #fff;
     background-size: 70%, 60%;
@@ -343,8 +343,6 @@ input:valid + label{
         padding: 2em;
         background-color: #FFF1F5;
     }
-
-
     .hamburger{
         display: none;
     }
@@ -352,11 +350,11 @@ input:valid + label{
     aside {
         background-color: #F8D0D0;
         grid-template-columns: auto;
-        grid-template-rows: auto auto;
-        padding: 0;
+        grid-template-rows: 1fr 3fr;
+        padding: 0px;
     }
-
     main{
+        margin: 0px;
         padding: 8em;
     }
 
@@ -368,13 +366,14 @@ input:valid + label{
         margin: 2em auto 1em auto;
     }
 
+
     figcaption{
         padding: 0px 15px;
         text-align: center;
         color: #707070;
     }
 
-    nav{
+    nav{ 
         position: relative;
         width: 100%;
         left: 0;
@@ -384,7 +383,7 @@ input:valid + label{
     .contact {
         grid-template-columns: auto;
         grid-template-rows: auto;
-        margin: 0px;
+        margin: 1em 0px;
     }
 
     .contact p {
@@ -397,12 +396,57 @@ input:valid + label{
         justify-items: center;
     }
     .contact ul li {
-        margin: auto;
+        margin: 1em auto;
+    }
+
+    .contact ul li a img {
+        width: 1.8em;
+        height: 1.8em;
+
     }
     
     .description{
         margin: 0px;
         padding: 1em;
+    }
+
+}
+
+
+/* ### 7. Media query 1366 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@media only screen and (min-width: 1366px) {
+
+    figcaption {
+        font-size: 1.6em;
+    }
+    .contact p {
+        font-size: 1.3em;
+    }
+    .description{
+        font-size: .9em;
+        padding: 3em 2em;
+    }
+    main {
+        background-size: 50%, 40%;
+    }
+
+    main h1 {
+        font-size: 5em;
+    }
+
+    .weather h2 {
+        font-size: 3em;
+    }
+    .weatherDescription {
+        font-size: 2em;
+    }
+    .weather p {
+        font-size: 1.6em;
+    }
+    .flag {
+        cursor: default;  
+        height: 22px;
+        width: 32px;
     }
 
 }
