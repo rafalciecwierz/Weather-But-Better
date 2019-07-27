@@ -358,12 +358,20 @@ input:valid + label{
         padding: 8em;
     }
 
-    #avatar {
+    .avatar {
         border-radius: 50%;
-        background: #fff;
+        background: url('../images/avatar.jpg') center;
+        background-size: cover;
         width: 80px;
         height: 80px;
         margin: 2em auto 1em auto;
+        border: 8px solid #FFF1F5;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .avatar:hover {
+        transform: scale(1.1);
+        border: 8px solid #fff;
     }
 
 
@@ -415,6 +423,12 @@ input:valid + label{
 
 /* ### 7. Media query 1366 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 @media only screen and (min-width: 1366px) {
+
+    .avatar{
+        width: 100px;
+        height: 100px;
+ 
+    }
 
     figcaption {
         font-size: 1.6em;
