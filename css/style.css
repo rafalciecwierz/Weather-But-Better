@@ -468,8 +468,8 @@ input:valid + label{
         background-size: 50%, 40%;
     }
     .avatar{
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px;
     }
 
     figcaption {
