@@ -463,6 +463,12 @@ input:valid + label{
 
 }
 
+@media only screen and (min-width: 1000px) {
+    .mainBox {
+        background-size: 50%, 40%;
+    }
+}
+
 
 /* ### 7. Media query 1366 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 @media only screen and (min-width: 1366px) {
