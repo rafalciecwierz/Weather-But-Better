@@ -467,6 +467,19 @@ input:valid + label{
     .mainBox {
         background-size: 50%, 40%;
     }
+    .avatar{
+        width: 80px;
+        height: 80px;
+    }
+
+    figcaption {
+        font-size: 1em;
+    }
+
+    .description{
+        font-size: .7em;
+        padding: 2em 2em;
+    }
 }
 
 
