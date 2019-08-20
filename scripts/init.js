@@ -13,7 +13,9 @@ var menu = document.querySelector('nav'),
     weatherTemperature = document.querySelector('.weatherTemperature'),
     weatherWind = document.querySelector('.weatherWind'),
     weatherClouds = document.querySelector('.weatherClouds'),
-    weatherPressure = document.querySelector('.weatherPressure');
+    weatherPressure = document.querySelector('.weatherPressure'),
+    weatherBackground = document.querySelector('.mainBox'),
+    weatherCondition = "weather-welcome";
 
 
     // Hamburger event listener

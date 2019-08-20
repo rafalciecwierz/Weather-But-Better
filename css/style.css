@@ -127,14 +127,57 @@ ul {
 
 
 /*### 4. Main CSS style ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-main{
+.mainBox{
     min-height: 50%;
     background-color: #fff;
     padding: 2em 1.5em 40% 1.5em;
     color: #414141;
-    background: url('../images/bg-cloud.svg') no-repeat bottom right, url('../images/clouds.svg') no-repeat 80% 90%,  #fff;
     background-size: 70%, 60%;
-    animation: 2s infinite alternate slide;
+    animation: 3s infinite alternate slide;
+}
+
+.weather-welcome{
+    background: url('../images/bg-cloud.svg') no-repeat bottom right, url('../images/welcome.svg') no-repeat 80% 90%,  #fff;
+    background-size: 70%, 60%;
+}
+
+.weather-clouds {
+    background: url('../images/bg-cloud.svg') no-repeat bottom right, url('../images/Clouds.svg') no-repeat 80% 90%,  #fff;
+    background-size: 70%, 60%;
+}
+
+.weather-clear {
+    background: url('../images/bg-cloud.svg') no-repeat bottom right, url('../images/Clear.svg') no-repeat 80% 90%,  #fff;
+    background-size: 70%, 30%;
+}
+
+.weather-thunder {
+    background: url('../images/bg-cloud.svg') no-repeat bottom right, url('../images/Thunderstorm.svg') no-repeat 80% 90%,  #fff;
+    background-size: 70%, 60%;
+}
+
+.weather-snow {
+    background: url('../images/bg-cloud.svg') no-repeat bottom right, url('../images/Snow.svg') no-repeat 80% 90%,  #fff;
+    background-size: 70%, 60%;
+}
+
+.weather-rain {
+    background: url('../images/bg-cloud.svg') no-repeat bottom right, url('../images/Rain.svg') no-repeat 80% 90%,  #fff;
+    background-size: 70%, 60%;
+}
+
+.weather-drizzle {
+    background: url('../images/bg-cloud.svg') no-repeat bottom right, url('../images/Drizzle.svg') no-repeat 80% 90%,  #fff;
+    background-size: 70%, 60%;
+}
+.weather-mist {
+    background: url('../images/bg-cloud.svg') no-repeat bottom right, url('../images/mist.svg') no-repeat 80% 90%,  #fff;
+    background-size: 70%, 60%;
+}
+
+.weather-error {
+    background: url('../images/bg-cloud.svg') no-repeat bottom right, url('../images/ERROR.svg') no-repeat 80% 90%,  #fff;
+    background-size: 70%, 60%;
 }
 
 @keyframes slide {
@@ -143,7 +186,7 @@ main{
     }
   
     to {
-        background-position-x: right, 75%;
+        background-position-x: right, 60%;
     }
   }
 
@@ -353,7 +396,7 @@ input:valid + label{
         grid-template-rows: 1fr 3fr;
         padding: 0px;
     }
-    main{
+    .mainBox{
         margin: 0px;
         padding: 8em;
     }
@@ -364,7 +407,7 @@ input:valid + label{
         background-size: cover;
         width: 80px;
         height: 80px;
-        margin: 2em auto 1em auto;
+        margin: 1em auto 1em auto;
         border: 8px solid #FFF1F5;
         transition: all 0.5s ease-in-out;
     }
@@ -427,20 +470,19 @@ input:valid + label{
     .avatar{
         width: 100px;
         height: 100px;
- 
     }
 
     figcaption {
-        font-size: 1.6em;
+        font-size: 1.4em;
     }
     .contact p {
         font-size: 1.3em;
     }
     .description{
-        font-size: .9em;
+        font-size: .7em;
         padding: 3em 2em;
     }
-    main {
+    .mainBox {
         background-size: 50%, 40%;
     }
 
